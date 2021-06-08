@@ -15,14 +15,13 @@ class App extends Component {
     getCategory("creatures")
       .then((data) => {
         this.setState({ animals: data.data.non_food})
-        console.log(this.state.animals)
       })
   }
 
   render() {
     return (
       <section className="App">
-        <Dashboard />
+        {this.state.animals.length && <Dashboard data={this.state.animals}/>}
       </section>
     );
   }
