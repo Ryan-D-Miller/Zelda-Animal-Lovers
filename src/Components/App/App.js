@@ -1,6 +1,7 @@
 import './App.css';
 import React, {Component} from 'react';
 import {getCategory} from '../../apiCalls';
+import Dashboard from '../Dashboard/Dashboard';
 
 class App extends Component {
   constructor() {
@@ -20,8 +21,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-      </div>
+      <section className="App">
+        <Dashboard />
+      </section>
     );
   }
 }
