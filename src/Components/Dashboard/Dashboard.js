@@ -1,6 +1,5 @@
 import './Dashboard.css';
 import Card from '../Card/Card';
-import { Route, Switch, Redirect } from 'react-router-dom';
 
 function Dashboard({data, updateFound}) {
 

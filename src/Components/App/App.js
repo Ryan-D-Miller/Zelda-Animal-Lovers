@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import {getCategory} from '../../apiCalls';
 import Dashboard from '../Dashboard/Dashboard';
 import Header from '../Header/Header';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
@@ -35,12 +36,44 @@ class App extends Component {
     this.setState({animal: updatedData})
   }
 
+  filterData = (isMet) => {
+    const filteredData = this.state.animals.filter(animal => {
+      console.log(animal.isFound)
+      return animal.isFound === isMet});
+    console.log(filteredData);
+    return filteredData;
+  }
+
   render() {
     return (
       <section className="App">
         <Header />
         {this.state.animals.length 
-        && <Dashboard data={this.state.animals} updateFound={this.updateFound}/>}
+        && 
+        <Switch>
+          <Route exact
+            path='/'
+            render={() => {
+              return <Dashboard data={this.state.animals} updateFound={this.updateFound} />
+            }}
+          />
+          <Route exact
+            path='/Met'
+            render={() => {
+              const filteredData = this.filterData(true);
+              return <Dashboard data={filteredData} updateFound={this.updateFound} />
+            }}
+            />
+          <Route exact
+            path='/UnMet'
+            render={() => {
+              const filteredData = this.filterData(false);
+              return <Dashboard data={filteredData} updateFound={this.updateFound} />
+            }}
+          />
+        
+        </Switch>}
+        {/* // <Dashboard data={this.state.animals} updateFound={this.updateFound}/>} */}
       </section>
     );
   }

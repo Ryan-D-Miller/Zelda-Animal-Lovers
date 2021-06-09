@@ -6,9 +6,9 @@ function Header() {
     return <header>
         <h1>Zelda Animal Lovers</h1>
         <nav>
-            <Link to={'/'}>All Friends</Link>
-            <Link to='/Met'>Met Friends</Link>
-            <Link to='/UnMet'>UnMet Friends</Link>
+            <Link className="link" to={'/'}>All Friends</Link>
+            <Link className="link" to='/Met'>Met Friends</Link>
+            <Link className="link" to='/UnMet'>UnMet Friends</Link>
         </nav>
     </header>
 }
