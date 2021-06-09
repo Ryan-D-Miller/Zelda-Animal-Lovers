@@ -10,7 +10,7 @@ function Dashboard({data}) {
     });
 
     return (
-        <section>
+        <section className="dashboard">
             Animals!
             <main>
                 {displayCards}
