@@ -2,22 +2,28 @@
     display: flex;
     margin: 20px;
     font-size: 16px;
+    border: #BA9F65 solid;
+    background-color: #484B4B;
+    box-shadow: 10px 7px 5px black;
 }
 
 .card-img {
     width: 150px;
-    height: 150px;
+    height: 100%;
 }
 
 .name {
-    padding: 10px;
     font-size: 25px;
 }
 
 .description {
-    padding: 10px;
+    padding-left: 10px;
 }
 
 p {
     color: white;
+}
+
+.found-button {
+    font-family: 'Triforce';
 }
