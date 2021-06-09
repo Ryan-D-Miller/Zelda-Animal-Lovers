@@ -26,4 +26,14 @@ p {
 
 .found-button {
     font-family: 'Triforce';
+    background-color: #86A5A9;
+    width: 100px;
+    height: 45px;
+    margin: 8px;
+}
+
+.button_img {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
 }

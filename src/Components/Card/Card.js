@@ -1,5 +1,7 @@
 import './Card.css';
 import React from 'react';
+import emptyTriforce from '../../Assets/triforce_empty.png';
+import filledTriforce from '../../Assets/triforce_filled.png';
 
 function Cards({data, updateFound}) {
     {if(data.common_locations){
@@ -13,7 +15,10 @@ function Cards({data, updateFound}) {
                 <p className="description">{data.description}</p>
             </div>
             <div className="button-container">
-                <button className="found-button" onClick={() => updateFound(data.id)}>{!data.isFound ? "Met Friend" : "Not Met"}</button>
+                <button className="found-button" onClick={() => updateFound(data.id)}>
+                    {!data.isFound ? "Met Friend"  : "Not Met Friend"}
+                    {!data.isFound ? <img className="button_img" src={emptyTriforce} /> : <img className="button_img" src={filledTriforce} />}
+                </button>
             </div>
         </section>
     ) 
