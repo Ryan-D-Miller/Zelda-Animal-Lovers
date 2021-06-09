@@ -13,7 +13,7 @@ function Cards({data, updateFound}) {
                 <p className="description">{data.description}</p>
             </div>
             <div className="button-container">
-                <button className="found-button" onClick={() => updateFound(data.id)}>Found Friend</button>
+                <button className="found-button" onClick={() => updateFound(data.id)}>{!data.isFound ? "Met Friend" : "Not Met"}</button>
             </div>
         </section>
     ) 
