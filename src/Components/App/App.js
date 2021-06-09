@@ -28,7 +28,7 @@ class App extends Component {
   updateFound = (id) => {
     const updatedData = this.state.animals.map(animal => {
       if(animal.id === id) {
-        animal.isFound = true;
+        animal.isFound = !animal.isFound;
       }
       return animal;
     })
