@@ -37,10 +37,7 @@ class App extends Component {
   }
 
   filterData = (isMet) => {
-    const filteredData = this.state.animals.filter(animal => {
-      console.log(animal.isFound)
-      return animal.isFound === isMet});
-    console.log(filteredData);
+    const filteredData = this.state.animals.filter(animal => animal.isFound === isMet);
     return filteredData;
   }
 
