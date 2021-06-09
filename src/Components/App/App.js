@@ -51,21 +51,21 @@ class App extends Component {
           <Route exact
             path='/'
             render={() => {
-              return <Dashboard data={this.state.animals} updateFound={this.updateFound} />
+              return <Dashboard title={"All Friends!"} data={this.state.animals} updateFound={this.updateFound} />
             }}
           />
           <Route exact
             path='/Met'
             render={() => {
               const filteredData = this.filterData(true);
-              return <Dashboard data={filteredData} updateFound={this.updateFound} />
+              return <Dashboard title={"Met Friends!"} data={filteredData} updateFound={this.updateFound} />
             }}
             />
           <Route exact
             path='/UnMet'
             render={() => {
               const filteredData = this.filterData(false);
-              return <Dashboard data={filteredData} updateFound={this.updateFound} />
+              return <Dashboard title={"UnMet Friends"} data={filteredData} updateFound={this.updateFound} />
             }}
           />
         

@@ -1,7 +1,7 @@
 import './Dashboard.css';
 import Card from '../Card/Card';
 
-function Dashboard({data, updateFound}) {
+function Dashboard({data, updateFound, title}) {
 
     const displayCards = data.map(data => {
         return (
@@ -11,7 +11,7 @@ function Dashboard({data, updateFound}) {
 
     return (
         <section className="dashboard">
-            <h2>Animals!</h2>
+            <h2>{title}</h2>
             <main>
                 {displayCards}
             </main>
