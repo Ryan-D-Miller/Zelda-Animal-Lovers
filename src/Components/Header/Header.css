@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+}
+
+nav p{
+    color: #BA9F65;
+}
+
+
+
+header {
+    color: #BA9F65;
+    border: #BA9F65 solid;
+    background-color: black;
+    text-align: center;
+}
