@@ -8,7 +8,7 @@ function Header() {
         <nav>
             <Link className="link" to={'/'}>All Friends</Link>
             <Link className="link" to='/Met'>Met Friends</Link>
-            <Link className="link" to='/UnMet'>UnMet Friends</Link>
+            <Link className="link" to='/UnMet'>Unmet Friends</Link>
         </nav>
     </header>
 }

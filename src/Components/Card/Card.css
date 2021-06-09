@@ -1,6 +1,7 @@
 .card {
     display: flex;
     margin: 20px;
+    font-size: 16px;
 }
 
 .card-img {
@@ -10,6 +11,7 @@
 
 .name {
     padding: 10px;
+    font-size: 25px;
 }
 
 .description {

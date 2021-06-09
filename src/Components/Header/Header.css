@@ -5,21 +5,23 @@ nav {
     width: 100%;
 }
 
-nav p{
-    color: #BA9F65;
-}
-
-
-
 header {
     color: #BA9F65;
     border: #BA9F65 solid;
     background-color: black;
     text-align: center;
+
+}
+
+h1 {
+    font-family: 'Triforce';
+    font-size: 75px;
 }
 
 .link {
     text-decoration: underline;
     color: #BA9F65;
     margin-bottom: 10px;
+    font-family: 'Triforce';
+    font-size: 30px;
 }
