@@ -73,7 +73,6 @@ class App extends Component {
           />
         
         </Switch>}
-        {/* // <Dashboard data={this.state.animals} updateFound={this.updateFound}/>} */}
       </section>
     );
   }
