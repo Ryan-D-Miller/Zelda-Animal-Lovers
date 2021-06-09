@@ -25,11 +25,21 @@ class App extends Component {
     return updatedData;
   }
 
+  updateFound = (id) => {
+    const updatedData = this.state.animals.map(animal => {
+      if(animal.id === id) {
+        animal.isFound = true;
+      }
+      return animal;
+    })
+    this.setState({animal: updatedData})
+  }
+
   render() {
     return (
       <section className="App">
         <Header />
-        {this.state.animals.length && <Dashboard data={this.state.animals}/>}
+        {this.state.animals.length && <Dashboard data={this.state.animals} updateFound={this.updateFound}/>}
       </section>
     );
   }
