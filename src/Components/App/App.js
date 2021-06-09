@@ -15,8 +15,14 @@ class App extends Component {
   componentDidMount() {
     getCategory("creatures")
       .then((data) => {
-        this.setState({ animals: data.data.non_food})
+        const updatedData = this.addFoundKey(data.data.non_food)
+        this.setState({ animals: updatedData})
       })
+  }
+
+  addFoundKey(data) {
+    const updatedData = data.map(animal => ({...animal, isFound: false}));
+    return updatedData;
   }
 
   render() {
