@@ -2,6 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import {getCategory} from '../../apiCalls';
 import Dashboard from '../Dashboard/Dashboard';
+import Header from '../Header/Header';
 
 class App extends Component {
   constructor() {
@@ -21,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <section className="App">
+        <Header />
         {this.state.animals.length && <Dashboard data={this.state.animals}/>}
       </section>
     );

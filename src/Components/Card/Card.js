@@ -3,7 +3,7 @@ import React from 'react';
 
 function Cards({data}) {
     {if(data.common_locations){
-        console.log(data.common_locations[0])
+        // console.log(data.common_locations[0])
     }}
     return (
         <section className="card">

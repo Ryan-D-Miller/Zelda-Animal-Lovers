@@ -11,7 +11,7 @@ function Dashboard({data}) {
 
     return (
         <section className="dashboard">
-            Animals!
+            <h2>Animals!</h2>
             <main>
                 {displayCards}
             </main>
