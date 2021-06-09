@@ -1,11 +1,11 @@
 import './Dashboard.css';
 import Card from '../Card/Card';
 
-function Dashboard({data}) {
+function Dashboard({data, updateFound}) {
 
     const displayCards = data.map(data => {
         return (
-            <Card data={data} key={data.id}/>
+            <Card data={data} key={data.id} updateFound={updateFound}/>
         )
     });
 

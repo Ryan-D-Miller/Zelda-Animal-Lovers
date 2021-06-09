@@ -1,7 +1,7 @@
 import './Card.css';
 import React from 'react';
 
-function Cards({data}) {
+function Cards({data, updateFound}) {
     {if(data.common_locations){
         // console.log(data.common_locations[0])
     }}
@@ -12,7 +12,9 @@ function Cards({data}) {
                 <p className="name">{data.name}</p>
                 <p className="description">{data.description}</p>
             </div>
-            <div className="button-container"><button className="found-button">Found Friend</button></div>
+            <div className="button-container">
+                <button className="found-button" onClick={() => updateFound(data.id)}>{!data.isFound ? "Met Friend" : "Not Met"}</button>
+            </div>
         </section>
     ) 
 }
