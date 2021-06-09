@@ -1,6 +1,7 @@
 import './App.css';
 import React, {Component} from 'react';
 import {getCategory} from '../../apiCalls';
+import Dashboard from '../Dashboard/Dashboard';
 
 class App extends Component {
   constructor() {
@@ -14,14 +15,14 @@ class App extends Component {
     getCategory("creatures")
       .then((data) => {
         this.setState({ animals: data.data.non_food})
-        console.log(this.state.animals)
       })
   }
 
   render() {
     return (
-      <div className="App">
-      </div>
+      <section className="App">
+        {this.state.animals.length && <Dashboard data={this.state.animals}/>}
+      </section>
     );
   }
 }

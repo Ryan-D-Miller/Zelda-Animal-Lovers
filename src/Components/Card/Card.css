@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    margin: 20px;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    padding: 10px;
+}
+
+.description {
+    padding: 10px;
+}
