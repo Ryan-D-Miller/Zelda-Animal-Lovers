@@ -39,7 +39,8 @@ class App extends Component {
     return (
       <section className="App">
         <Header />
-        {this.state.animals.length && <Dashboard data={this.state.animals} updateFound={this.updateFound}/>}
+        {this.state.animals.length 
+        && <Dashboard data={this.state.animals} updateFound={this.updateFound}/>}
       </section>
     );
   }
