@@ -2,8 +2,8 @@
 Cypress.Commands.add('loadStubs', () => {
     const baseURL = "https://botw-compendium.herokuapp.com/api/v2";
 
-    cy.intercept(`${baseURL}/category/creatures`,{
-        "data": [{
+    cy.intercept(`${baseURL}/category/creatures`, {
+        "data": {"non_food": [{
             "category": "creatures",
             "common_locations": (2)["Hyrule Field", "Faron Grasslands"],
             "description": "These can most often be found on plains. Their usefulness as transportation has made them valuable since ancient times. That said, wild horses do tend to get spooked and run off when approached, so if you're looking to snag one, it's best to sneak up on it.",
@@ -30,7 +30,7 @@ Cypress.Commands.add('loadStubs', () => {
                 "image": "https://botw-compendium.herokuapp.com/api/v2/entry/sand_seal/image",
                 "name": "sand seal"
             }
-        ]
+        ]}
         }
     );
 })
