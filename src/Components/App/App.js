@@ -16,6 +16,7 @@ class App extends Component {
   componentDidMount() {
     getCategory("creatures")
       .then((data) => {
+        console.log(data)
         const updatedData = this.addFoundKey(data.data.non_food)
         updatedData.sort((a,b) => {
           return a.id - b.id
