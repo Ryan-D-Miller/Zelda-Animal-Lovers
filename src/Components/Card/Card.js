@@ -18,7 +18,7 @@ function Card({name, image, description, id, common_locations, isFound,updateFou
             <div className="button-container">
                 <button className="found-button" onClick={() => updateFound(id)}>
                     {!isFound ? "Met Friend"  : "Not Met Friend"}
-                    {!isFound ? <img className="button_img" src={emptyTriforce} alt="Empty Triforce"/> : <img className="button_img" alt="TriForce" src={filledTriforce} />}
+                    {!isFound ? <img className="button_img" src={emptyTriforce} alt="Empty Triforce"/> : <img className="button_img" alt="Triforce" src={filledTriforce} />}
                 </button>
             </div>
         </section>

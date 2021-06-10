@@ -18,7 +18,13 @@ describe('Card', () => {
         cy.visit('/')
         cy.get('.found-button').first().click()
         cy.get('.found-button').first().children()
-            .should('have.attr', "alt").should('include', "TriForce")
+            .should('have.attr', "alt").should('include', "Triforce")
+    })
+    it("Should be able to click met friend button and click it again to see it change back", () => {
+        cy.visit('/')
+        cy.get('.found-button').first().click().click()
+        cy.get('.found-button').first().children()
+            .should('have.attr', "alt").should('include', "Empty Triforce")
     })
 })
 
