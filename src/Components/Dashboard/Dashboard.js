@@ -30,7 +30,7 @@ function Dashboard({data, updateFound, title}) {
 }
 
 Dashboard.prototypes = {
-    title: PropTypes.number,
+    title: PropTypes.string,
     data: PropTypes.object,
     updateFound: PropTypes.func
 }

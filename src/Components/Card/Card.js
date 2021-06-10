@@ -26,7 +26,13 @@ function Card({name, image, description, id, common_locations, isFound,updateFou
 }
 
 Card.propTypes = {
-
+    name: PropTypes.string,
+    image: PropTypes.string,
+    description: PropTypes.string,
+    id: PropTypes.number,
+    isFound: PropTypes.bool,
+    updateFound: PropTypes.func,
+    common_locations: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default Card;
