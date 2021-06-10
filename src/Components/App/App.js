@@ -68,7 +68,7 @@ class App extends Component {
               return <Dashboard title={"UnMet Friends"} data={filteredData} updateFound={this.updateFound} />
             }}
           />
-        
+          <Redirect to="/"/>
         </Switch>}
       </section>
     );
