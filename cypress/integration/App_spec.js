@@ -4,6 +4,6 @@ describe('App', () => {
         cy.visit('/');
     })
     it("Should have a header component", () => {
-        cy.get('.header')
+        cy.get('Header').get('h1').should('have.text', "Zelda Animal Lovers")
     })
 })
