@@ -1,5 +1,10 @@
 @import-normalize;
+@font-face {
+  font-family: 'Triforce';
+  src: local('Triforce'), url('./Assets/Triforce.ttf'), format('woff');
+}
 
 body {
-
+  font-family: 'Triforce';
+  margin: 0;
 }
