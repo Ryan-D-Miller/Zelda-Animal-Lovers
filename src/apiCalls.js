@@ -1,4 +1,4 @@
-const zeldaCall = "https://botw-compendium.herokuapp.com/api/v2";
+const zeldaCall = "https://botw-compendium.herokuapp.com/ap/v2";
 
 const getCategory = (category) => {
     console.log()

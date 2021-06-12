@@ -9,7 +9,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      animals: []
+      animals: [],
+      error: ''
     }
   }
 
@@ -22,6 +23,9 @@ class App extends Component {
           return a.id - b.id
         })
         this.setState({ animals: updatedData})
+      })
+      .catch(err => {
+        this.setState({error: err})
       })
   }
 
@@ -37,6 +41,8 @@ class App extends Component {
       }
       return animal;
     })
+    //do a for each on the updated data and push that into one of 2 arrays 
+    //either unmet or met and than when you set state set the 2 new arrays to that
     this.setState({animal: updatedData})
   }
 
@@ -74,6 +80,7 @@ class App extends Component {
           />
           <Redirect to="/"/>
         </Switch>}
+        {this.state.error && <p className="error">Something went wrong Please try again!</p>}
       </section>
     );
   }
