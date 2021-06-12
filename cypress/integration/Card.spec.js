@@ -26,6 +26,14 @@ describe('Card', () => {
         cy.get('.found-button').first().children()
             .should('have.attr', "alt").should('include', "Empty Triforce")
     })
+    it('Should display the locations of an animal if they have common_locations', () => {
+        cy.visit('/')
+        cy.get('.card').eq(1).children().eq(1).children().eq(3).should('contain', '| Gerudo Desert |')
+    })
+    it('Should display no know location if the animal has no common_locations', () => {
+        cy.visit('/')
+        cy.get('.card').eq(0).children().eq(1).children().eq(4).should('contain', 'No known locations')
+    })
 })
 
 
