@@ -17,10 +17,16 @@ class App extends Component {
   componentDidMount() {
     getCategory("creatures")
       .then((data) => {
-        console.log(data)
         const updatedData = this.addFoundKey(data.data.non_food)
         updatedData.sort((a,b) => {
           return a.id - b.id
+        })
+        updatedData.forEach(animal => {
+            if (animal.common_locations) {
+              animal.common_locations = animal.common_locations.map(location => {
+                return `| ${location} | `
+              });
+            }
         })
         this.setState({ animals: updatedData})
       })
