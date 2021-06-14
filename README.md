@@ -12,6 +12,9 @@
 #### User Flow:
 
  ![GIF of wish list and board game details](https://media.giphy.com/media/5syk7UddIQ66o6YgMr/giphy.gif)
+ 
+## Link to BotW API
+- BotW API [BotW API](https://gadhagod.github.io/Hyrule-Compendium-API/#/)
 
 ## Setup
 - Fork this project to your own Github account
@@ -32,7 +35,9 @@
 ## Next Steps
 - Add a map feature to be able to view the locations on a live updating BotW map 
 
-
+## Team & Individual Goals
+- Keep getting a stronger understanding of a basic react app
+- implement an outside API
 
 ## Authors
 - Ryan Miller [@Ryan-D-Miller](https://github.com/Ryan-D-Miller)
