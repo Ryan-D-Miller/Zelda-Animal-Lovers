@@ -14,7 +14,7 @@
  ![GIF of wish list and board game details](https://media.giphy.com/media/5syk7UddIQ66o6YgMr/giphy.gif)
  
 ## Link to BotW API
-- BotW API [BotW API](https://gadhagod.github.io/Hyrule-Compendium-API/#/)
+-[BotW API](https://gadhagod.github.io/Hyrule-Compendium-API/#/)
 
 ## Setup
 - Fork this project to your own Github account
