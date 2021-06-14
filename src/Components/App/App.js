@@ -53,8 +53,6 @@ class App extends Component {
       }
       return animal;
     })
-    //do a for each on the updated data and push that into one of 2 arrays 
-    //either unmet or met and than when you set state set the 2 new arrays to that
     this.setState({animal: updatedData})
   }
 
