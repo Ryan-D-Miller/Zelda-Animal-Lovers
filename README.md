@@ -1,12 +1,7 @@
-## Accessibility
-- The app's design is responsive with several breakpoints to accommodate various screen sizes.
-
 #### Main Page:
 - View animals through out breath of the wild 
 - Add and remove animals that you have met to keep track of all animals you have met through out the game
 - View what locations animals reside to help find the animals easier
-
-
 
 
 #### User Flow:
@@ -15,6 +10,11 @@
  
 ## Link to BotW API
 -[BotW API](https://gadhagod.github.io/Hyrule-Compendium-API/#/)
+
+## Accessibility
+- The app's design is responsive with several breakpoints to accommodate various screen sizes.
+
+
 
 ## Setup
 - Fork this project to your own Github account
